@@ -9,11 +9,26 @@
 <body>
     <div class="container">
         <h1>Factory Orders</h1>
-        <div id="auth-form">
-            <input type="text" id="username" placeholder="Username (for new accounts)" class="auth-input">
-            <input type="email" id="email" placeholder="Email" class="auth-input">
-            <input type="password" id="password" placeholder="Password (min. 6 characters)" class="auth-input">
-            <button id="loginBtn" class="auth-button">Login</button>
+        
+        <div class="auth-tabs">
+            <button id="signInTabBtn" class="tab-button active">Sign In</button>
+            <button id="signUpTabBtn" class="tab-button">Sign Up</button>
+        </div>
+
+        <div id="signInForm" class="auth-form">
+            <input type="email" id="signInEmail" placeholder="Email" class="auth-input">
+            <input type="password" id="signInPassword" placeholder="Password" class="auth-input">
+            <div class="remember-me-container">
+                <input type="checkbox" id="rememberMeCheckbox">
+                <label for="rememberMeCheckbox">Remember me</label>
+            </div>
+            <button id="loginBtn" class="auth-button">Sign In</button>
+        </div>
+
+        <div id="signUpForm" class="auth-form" style="display: none;">
+            <input type="text" id="signUpUsername" placeholder="Username" class="auth-input">
+            <input type="email" id="signUpEmail" placeholder="Email" class="auth-input">
+            <input type="password" id="signUpPassword" placeholder="Password (min. 6 characters)" class="auth-input">
             <button id="signupBtn" class="auth-button secondary">Create Account</button>
         </div>
     </div>
