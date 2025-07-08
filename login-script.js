@@ -2,12 +2,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, updateProfile, setPersistence, browserSessionPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA...some-long-code...", // Your actual apiKey would be here
+  apiKey: "AIzaSyA_5cqElmTf_UW8chdEBH1lcY4cWx3RI88",
   authDomain: "holoul-factory-orders.firebaseapp.com",
   projectId: "holoul-factory-orders",
-  storageBucket: "holoul-factory-orders.appspot.com",
-  messagingSenderId: "123456789012",
-  appId: "1:123456789012:web:a1b2c3d4e5f6g7h8i9j0"
+  storageBucket: "holoul-factory-orders.firebasestorage.app",
+  messagingSenderId: "1069932100494",
+  appId: "1:1069932100494:web:937a4f69fe206836ef42df"
 };
 
 const app = initializeApp(firebaseConfig);
