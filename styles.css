@@ -25,11 +25,29 @@ p {
 }
 
 /* Login/Auth Form Styles */
-#auth-form {
+.auth-tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+    border-bottom: 3px solid transparent;
+}
+.tab-button.active {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+.auth-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 20px;
 }
 .auth-input {
     padding: 12px;
@@ -47,6 +65,7 @@ p {
     background-color: #007bff;
     color: white;
     transition: background-color 0.2s;
+    margin-top: 10px;
 }
 .auth-button:hover {
     background-color: #0056b3;
@@ -56,6 +75,16 @@ p {
 }
 .auth-button.secondary:hover {
     background-color: #5a6268;
+}
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 5px 0;
+}
+.remember-me-container label {
+    color: #666;
 }
 
 /* Header on Main Page */
@@ -71,38 +100,11 @@ p {
 }
 
 /* Main Page Buttons */
-.button-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    gap: 20px;
-}
-.icon-button {
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    width: 160px;
-}
-.icon-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
-}
-.icon-button p {
-    margin: 10px 0 0;
-    font-weight: bold;
-    font-size: 16px;
-}
-.icon-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    color: white;
-}
+.button-container { display: flex; justify-content: space-around; margin-top: 30px; gap: 20px; }
+.icon-button { cursor: pointer; padding: 20px; border-radius: 10px; transition: transform 0.2s, box-shadow 0.2s; width: 160px; }
+.icon-button:hover { transform: translateY(-5px); box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); }
+.icon-button p { margin: 10px 0 0; font-weight: bold; font-size: 16px; }
+.icon-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto; color: white; }
 .icon-circle.drink { background-color: #007bff; }
 .icon-circle.come { background-color: #28a745; }
 
